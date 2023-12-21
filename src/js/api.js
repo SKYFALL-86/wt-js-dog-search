@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 axios.defaults.headers.common['x-api-key'] =
-  '41256071-ed92c4fb3a3837c10316edc61';
+  'live_C5PV0uAMIkf36ERy9ftR72pq8zFCjE1WQTVXK2FT4gnUDYi05WsabdLzeL2dTHtT';
 
 export async function fetchBreeds() {
   return await axios
-    .get('https://api.thedogapi.com/v1/breeds123')
+    .get('https://api.thedogapi.com/v1/breeds')
     .then(response => response.data);
 }
 
